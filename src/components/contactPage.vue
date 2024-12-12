@@ -1,6 +1,6 @@
 <template>
   <div class="content_contact">
-    <h1>Información personal</h1>
+    <h1>Información de contacto</h1>
     <div class="info_contact">
       <ul>
         <li>
@@ -50,7 +50,7 @@ export default {
         LinkWhatsApp: "https://api.whatsapp.com/send?phone=+573143814971&text=Hola,%20nos%20interesa%20tú%20perfil%20para%20una%20vacante.",
         personalEmail: "jucuellar4@gmail.com",
         linkedinProfile: "https://www.linkedin.com/in/jose-cuellar-gutierrez-2603b31a7/",
-        githubProfile: "",
+        githubProfile: "https://github.com/Jose-Cuellar",
       },
       currentDate: null,
       currentYear: null
@@ -70,7 +70,7 @@ export default {
 
 <style scoped>
   .content_contact{
-    padding: 8% 5%;
+    padding: 10% 5%;
   }
   h1{
     color: white;

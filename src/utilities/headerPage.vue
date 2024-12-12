@@ -37,30 +37,28 @@ export default {
 
 <style scoped>
 header {
-  /* background-color: #32435f; */
-  padding: 20px;
+  background: linear-gradient(to bottom, rgba(200, 200, 200, 0.9), rgba(200, 200, 200, 0.9));
+  padding: 15px 0px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  /* z-index: 1000; */
   text-align: center;
   /* border-bottom: 1px solid white; */
 }
 header nav ul {
   list-style-type: none;
+  margin-bottom: 0px !important;
 }
 header nav ul li {
   display: inline;
   margin: 25px;
 }
 header nav ul li a {
-  color: white;
+  color: #1E2A47;
   text-decoration: none;
-  padding: 20px;
 }
 a:hover, .router-link-active{
-  border-bottom: 2px solid white;
-  color: white;
+  border-bottom: 2px solid #1E2A47;
 }
 </style>

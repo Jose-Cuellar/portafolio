@@ -12,7 +12,7 @@ export default {
 
 <style scoped>
   .content_skills{
-    padding: 8% 5%;
+    padding: 10% 5%;
   }
   h1{
     color: blue;

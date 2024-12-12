@@ -1,7 +1,7 @@
 <template>
   <footer class="content_footer">
-    <p>&copy; {{ currentYear }} Portafolio de <strong>{{ personalInfo.ownerName }}.</strong> Todos los derechos reservados.</p>
-    <p>Para mas información puedes ir a la sección de <router-link class="link_contact" to="/contacto">Contacto</router-link></p>
+    <span>&copy; {{ currentYear }} Portafolio de <strong>{{ personalInfo.ownerName }}.</strong> Todos los derechos reservados.</span><br>
+    <span>Para mas información puedes ir a la sección de <router-link class="link_contact" to="/contacto">Contacto</router-link></span>
   </footer>
 </template>
 
@@ -32,21 +32,20 @@ export default {
 
 <style scoped>
 .content_footer {
-  /* background-color: #32435f; */
-  color: white;
-  padding: 15px;
+  background: linear-gradient(to bottom, rgba(200, 200, 200, 200), rgba(200, 200, 200, 200));
   position: fixed;
+  padding: 15px 0px;
+  color: #1E2A47;
   bottom: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
   text-align: center;
   line-height: 25px;
   /* border-top: 1px solid white; */
 }
 .link_contact{
   text-decoration: none;
-  color: white;
+  color: #1E2A47;
   font-weight: bold;
 }
 </style>

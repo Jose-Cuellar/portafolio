@@ -1,24 +1,44 @@
 <template>
   <div class="content_home">
     <h1>¡Hola, soy José Cuéllar Gutiérrez!</h1>
-    <p>Desarrollador de Software | Apasionado por la tecnología y la programación.</p>
-    <p>Me especializo en desarrollar soluciones web y aplicaciones innovadoras para mejorar la experiencia de los usuarios.</p>
-    <router-link class="link_about_me" to="/sobre-mi">Conoce más sobre mí</router-link>
+    <p><strong>Desarrollador de Software</strong> | Apasionado por la tecnología y la programación.</p>
+    <p>Me especializo en desarrollar soluciones web, con enfoque en el desarrollo backend y frontend.</p>
+    <router-link class="link_about_me" to="/sobre-mi"><p>Conoce más sobre mí</p></router-link>
+    <div class="d-flex justify-content-center">
+      <button
+        class="btn btn-success"
+        @click="btnDownload()"
+      >
+        Descargar CV
+      </button>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'homePage'
+  name: 'homePage',
+
+  data(){
+    return{
+
+    }
+  },
+  methods:{
+    btnDownload(){
+      console.log("cv");
+    }
+  }
 }
 </script>
 
 <style scoped>
   .content_home{
-    padding: 8% 5%;
+    padding: 10% 5%;
   }
-  h1, p{
+  .content_home > h1, p{
     color: white;
+    text-align: center;
   }
   p{
     line-height: 25px;
@@ -27,5 +47,12 @@ export default {
     text-decoration: none;
     color: white;
     font-weight: bold;
+    text-align: center;
+  }
+  strong {
+    color: #2d87f0;
+  }
+  .btn-success{
+    padding: 5px 30px;
   }
 </style>
