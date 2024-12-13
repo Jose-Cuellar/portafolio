@@ -32,20 +32,20 @@ export default {
 
 <style scoped>
 .content_footer {
-  background: linear-gradient(to bottom, rgba(200, 200, 200, 200), rgba(200, 200, 200, 200));
+  /* background: linear-gradient(to bottom, rgba(200, 200, 200, 200), rgba(200, 200, 200, 200)); */
+  backdrop-filter: blur(3px);
   position: fixed;
   padding: 15px 0px;
-  color: #1E2A47;
+  color: white;
   bottom: 0;
   left: 0;
   width: 100%;
   text-align: center;
   line-height: 25px;
-  /* border-top: 1px solid white; */
 }
 .link_contact{
   text-decoration: none;
-  color: #1E2A47;
+  color: white;
   font-weight: bold;
 }
 </style>

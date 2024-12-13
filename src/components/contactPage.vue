@@ -18,7 +18,7 @@
             target="_blank" 
             aria-label="LinkedIn"
           >
-            <span class="fa-brands fa-linkedin"></span>&nbsp;<span>LinkedIn</span>
+            <span style="color:#0e76a8;" class="fa-brands fa-linkedin"></span>&nbsp;<span>LinkedIn</span>
           </a>
         </li>
         <li>
@@ -27,7 +27,7 @@
             target="_blank" 
             aria-label="WhatsApp"
           >
-            <span class="fa-brands fa-whatsapp"></span>&nbsp;<span>{{ personalInfo.phoneNumber }}</span>
+            <span style="color:#25d366;" class="fa-brands fa-whatsapp"></span>&nbsp;<span>{{ personalInfo.phoneNumber }}</span>
           </a>
         </li>
         <li>

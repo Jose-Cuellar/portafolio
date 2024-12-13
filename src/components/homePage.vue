@@ -44,7 +44,7 @@ export default {
     line-height: 25px;
   }
   .link_about_me{
-    text-decoration: none;
+    /* text-decoration: none; */
     color: white;
     font-weight: bold;
     text-align: center;
