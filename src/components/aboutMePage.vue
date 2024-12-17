@@ -76,7 +76,11 @@ export default {
   .component_about{
     padding: 10% 5%;
   }
-  h1, p{
+  h1{
+    color: white;
+    font-weight: bold;
+  }
+  p{
     color: white;
   }
   .component_about {

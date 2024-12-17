@@ -25,8 +25,11 @@ export default {
     }
   },
   methods:{
-    btnDownload(){
-      console.log("cv");
+    btnDownload() {
+      const link = document.createElement('a');
+      link.href = "/cv/CV - José Cuéllar.pdf";
+      link.download = "CV-JoséCuéllar.pdf";
+      link.click();
     }
   }
 }
@@ -36,11 +39,14 @@ export default {
   .content_home{
     padding: 10% 5%;
   }
-  .content_home > h1, p{
+  h1{
     color: white;
     text-align: center;
+    font-weight: bold;
   }
   p{
+    color: white;
+    text-align: center;
     line-height: 25px;
   }
   .link_about_me{

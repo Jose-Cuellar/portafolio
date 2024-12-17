@@ -12,6 +12,7 @@
         <center>
           <img
             :src="project.image"
+            alt="project image"
             class="project_image"
           >
         </center>
@@ -24,6 +25,7 @@
         <div class="link">
           <a
             :href="project.link"
+            target="_blank"
           >
             <span class="fa-solid fa-globe"></span>
           </a>
@@ -147,7 +149,12 @@ export default {
   .content_projects{
     padding: 10% 5%;
   }
-  h1, .content_projects > p{
+  h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+  .content_projects > p{
     text-align: center;
     color: white;
   }
@@ -171,8 +178,12 @@ export default {
     color: #242424;;
   }
   .project_image{
-    position: relative;
     width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px black;
   }
   .link {
     position: absolute;
@@ -190,11 +201,12 @@ export default {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    cursor: pointer;
     bottom: 10px;
     right: 10px;
   }
   .technology-icon span {
     font-size: 30px;
-    /* color: #007bff; */
+    color: #007bff;
   }
 </style>

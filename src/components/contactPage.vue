@@ -75,11 +75,13 @@ export default {
   h1{
     color: white;
     text-align: center;
+    font-weight: bold;
   }
   .info_contact{
     display: grid;
     justify-content: center;
     padding: 25px 0px;
+    font-size: 18px;
   }
   ul {
     list-style-type: none;
