@@ -27,7 +27,7 @@ export default {
   methods:{
     btnDownload() {
       const link = document.createElement('a');
-      link.href = "/cv/CV - José Cuéllar.pdf";
+      link.href = "https://jose-cuellar.github.io/portafolio/cv/CV%20-%20Jos%C3%A9%20Cu%C3%A9llar.pdf";
       link.download = "CV-JoséCuéllar.pdf";
       link.click();
     }
