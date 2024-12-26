@@ -61,4 +61,16 @@ export default {
   .btn-success{
     padding: 5px 30px;
   }
+
+  @media (max-width: 768px) {
+    .content_home{
+      padding: 30% 5%;
+    }
+    h1{
+      font-size: 32px;
+    }
+    p, .btn-success{
+      font-size: 20px;
+    }
+  }
 </style>

@@ -132,6 +132,50 @@ export default {
               ]
             }
           ]
+        },
+
+        // Crm
+        {
+          title: "CRM",
+          languages: [
+            {
+              name: "Salesforce",
+              langs: [
+                {
+                  id: 1,
+                  icon: "fa-regular fa-database",
+                  name: "SOQL"
+                },
+                {
+                  id: 2,
+                  icon: "fa-brands fa-salesforce",
+                  name: "Apex"
+                },
+                {
+                  id: 3,
+                  icon: "fa-brands fa-java",
+                  name: "Java"
+                }
+              ]
+            },
+          ]
+        },
+
+        // Control de versiones
+        {
+          title: "Control de Versiones",
+          languages: [
+            {
+              name: "GitHub, Gitlab, Bitbucket",
+              langs: [
+                {
+                  id: 1,
+                  icon: "fa-regular fa-terminal",
+                  name: "Interfaz de la línea de comandos"
+                }
+              ]
+            },
+          ]
         }
       ],
     };
@@ -164,7 +208,7 @@ export default {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   .skills > .languages:hover {
-    /* transform: translateY(-5px); */
+    transform: translateY(-5px);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
     cursor: pointer;
   }
@@ -194,5 +238,20 @@ export default {
   }
   .skills .languages ul li:last-child {
     border-bottom: none;
+  }
+
+  @media (max-width: 768px) {
+    .content_skills{
+      padding: 30% 5%;
+    }
+    h1{
+      font-size: 32px;
+    }
+    .skills {
+      display: block;
+    }
+    .skills .languages{
+      margin: 20px 0px;
+    }
   }
 </style>

@@ -48,4 +48,13 @@ export default {
   color: white;
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  .content_footer{
+    padding: 10px;
+  }
+  span{
+    font-size: 20px;
+  }
+}
 </style>

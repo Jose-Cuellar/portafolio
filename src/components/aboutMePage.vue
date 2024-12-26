@@ -99,17 +99,21 @@ export default {
   }
   .component_about p {
     margin-bottom: 20px;
-  }
-  .component_about h2 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #111;
-  }
-  .component_about p {
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   }
   body.dark-mode .component_about {
     color: #f5f5f5;
+  }
+
+  @media (max-width: 768px) {
+    .component_about{
+      padding: 30% 5%;
+    }
+    h1{
+      font-size: 32px;
+    }
+    .component_about strong, .component_about p{
+      font-size: 20px;
+    }
   }
 </style>

@@ -78,7 +78,7 @@ export default {
     font-weight: bold;
   }
   .info_contact{
-    display: grid;
+    display: flex;
     justify-content: center;
     padding: 25px 0px;
     font-size: 18px;
@@ -96,5 +96,14 @@ export default {
   }
   span, strong {
     color: white;
+  }
+
+  @media (max-width: 768px) {
+    .content_contact{
+      padding: 30% 5%;
+    }
+    ul > li{
+      display: block;
+    }
   }
 </style>

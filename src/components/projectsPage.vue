@@ -50,6 +50,7 @@
 import subastala from "../assets/imagenes/projects/subastala.png";
 import klappme from "../assets/imagenes/projects/klappme.png";
 import tarkus from "../assets/imagenes/projects/tarkus.png";
+import okan from "../assets/imagenes/projects/okan.png";
 import havoline from "../assets/imagenes/projects/havoline.png";
 
 export default {
@@ -60,6 +61,7 @@ export default {
       subastala: subastala,
       klappme: klappme,
       tarkus: tarkus,
+      okan: okan,
       havoline: havoline,
 
       projects:[
@@ -124,6 +126,27 @@ export default {
         },
         {
           id: 4,
+          image: okan,
+          title: "Okan",
+          description: "Este proyecto es una iniciativa interna de la empresa BRM S.A. destinada a centralizar la información de sus colaboradores. A través de esta plataforma, cada empleado podrá acceder a los aplicativos disponibles para él, así como consultar sus datos personales y laborales.",
+          link: "https://apps.okan.tools/",
+          tecnologies: [
+            {
+              name: "Vuejs",
+              icon: "fa-brands fa-vuejs"
+            },
+            {
+              name: "Wordpress",
+              icon: "fa-brands fa-wordpress"
+            },
+            {
+              name: "Php",
+              icon: "fa-brands fa-php"
+            }
+          ]
+        },
+        {
+          id: 5,
           image: havoline,
           title: "Havoline",
           description: "Este proyecto fue desarrollado con el objetivo de fidelizar a los usuarios. La plataforma permite a los usuarios registrarse e ingresar de manera segura. Una vez dentro, pueden inscribir los códigos encontrados en las etiquetas de los productos 4T. Estos códigos otorgan puntos que los usuarios pueden redimir por productos exclusivos disponibles en el catálogo de la plataforma.",
@@ -208,5 +231,23 @@ export default {
   .technology-icon span {
     font-size: 30px;
     color: #007bff;
+  }
+
+  @media (max-width: 768px) {
+    .content_projects{
+      padding: 30% 5%;
+    }
+    h1{
+      font-size: 32px;
+    }
+    .content_projects > p{
+      font-size: 20px;
+    }
+    .projects_content{
+      display: block;
+    }
+    .all_projects{
+      margin: 20px 0px;
+    }
   }
 </style>
